@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff Muturi | Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader">
+      <div class="loader-inner">
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Jeff<span>Muturi</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="dj.html">DJ Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content will be different for each page -->
+    <main>
+      <!-- Homepage content will go here -->
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="typewriter">Hi, I'm <span>Jeff Muturi</span></h1>
+            <h2>
+              <span
+                class="typing-text"
+                data-wait="3000"
+                data-words='["Full Stack Developer", "Professional DJ", "Creative Designer", "Tech Enthusiast"]'
+              ></span>
+            </h2>
+            <p class="bio">
+              I'm a passionate developer and DJ with over 7 years of experience
+              creating digital experiences and unforgettable musical journeys.
+              My work blends technical expertise with creative artistry to
+              deliver exceptional results for clients worldwide.
+            </p>
+            <div class="cta-buttons">
+              <a href="projects.html" class="btn">View My Work</a>
+              <a href="contact.html" class="btn-outline">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="avatar-container">
+              <img
+                src="assets/images/avatar.jpg"
+                alt="Your Name"
+                class="avatar"
+              />
+              <div class="avatar-border"></div>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-soundcloud"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills">
+        <div class="container">
+          <h2 class="section-title">My <span>Skills</span></h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>
+                Building responsive, user-friendly websites and applications
+                with modern technologies.
+              </p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <h3>DJ & Music Production</h3>
+              <p>
+                Creating unforgettable musical experiences and producing
+                original tracks.
+              </p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Designing intuitive and visually appealing user interfaces and
+                experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta">
+        <div class="container">
+          <h2>Ready to work together?</h2>
+          <p>
+            Whether you need a website, an app, or music for your event, I'd
+            love to hear about your project.
+          </p>
+          <a href="contact.html" class="btn">Get In Touch</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>Jeff Muturi</h3>
+            <p>
+              Full Stack Developer & Professional DJ creating digital
+              experiences and musical journeys.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="dj.html">DJ Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Connect</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-soundcloud"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year"></span> JEFF MUTURI. All rights reserved.
+            Created and designed by Jeff Muturi!
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

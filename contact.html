@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact| Jeff Muturi</title>
+        <!-- Font Awesome for icons -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <!-- Google Fonts -->
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+  <body>
+    <!-- Same loader and navbar as index.html -->
+
+    <main>
+      <!-- Contact Hero -->
+      <section class="contact-hero">
+        <div class="container">
+          <h1>Get In <span>Touch</span></h1>
+          <p>
+            Have a project in mind or want to book me for an event? I'd love to
+            hear from you!
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-info">
+              <h2>Contact <span>Information</span></h2>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>zjfroze93@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>New York, USA</p>
+                </div>
+              </div>
+
+              <h2 class="booking-title">DJ <span>Booking</span></h2>
+              <p>For booking inquiries, please contact my manager:</p>
+              <div class="info-item">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                  <h3>Manager</h3>
+                  <p>Sarah Johnson</p>
+                  <p>sarah@management.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <h2>Send Me a <span>Message</span></h2>
+              <form id="contactForm" netlify>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <select id="inquiry" name="inquiry">
+                    <option value="">Select Inquiry Type</option>
+                    <option value="web">Web Development</option>
+                    <option value="dj">DJ Booking</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn">
+                  Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="map-section">
+        <div class="container">
+          <h2 class="section-title">Find Me <span>Here</span></h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256836502!2d-73.9878449242391!3d40.74844097138992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1686756386316!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about">
+              <h3>Jeff Muturi</h3>
+              <p>
+                Full Stack Developer & Professional DJ creating digital
+                experiences and musical journeys.
+              </p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dj.html">DJ Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              &copy; <span id="year"></span> JEFF MUTURI. All rights reserved.
+              Created and designed by Jeff Muturi!
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Form submission
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Here you would typically send the form data to a server
+        // For now, we'll just show an alert
+        alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+
+        // Reset form
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>
+
+
